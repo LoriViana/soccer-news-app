@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "950730575155",
+    "project_id": "news-soccer-dio-santander",
+    "storage_bucket": "news-soccer-dio-santander.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:950730575155:android:1d9e4dc60ec234c0b2c246",
+        "android_client_info": {
+          "package_name": "me.dio.soccernews"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "950730575155-uqrdep93bcp74r03p2ae2sldlcclfhvt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6frWgH-BParLcZkoEEBI_N4eU4oHdqy0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "950730575155-uqrdep93bcp74r03p2ae2sldlcclfhvt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

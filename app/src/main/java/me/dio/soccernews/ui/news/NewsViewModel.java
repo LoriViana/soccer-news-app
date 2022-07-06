@@ -18,7 +18,7 @@ import retrofit2.Response;
 public class NewsViewModel extends ViewModel {
 
     public enum State {
-        DOING, DONE, ERROR;
+        DOING, DONE, ERROR; //estados progresso, feito e erro
     }
 
     private final MutableLiveData<List<News>> news = new MutableLiveData<>();
@@ -29,15 +29,15 @@ public class NewsViewModel extends ViewModel {
     }
 
     public void findNews() {
-        state.setValue(State.DOING);
+        state.setValue(State.DOING); //em progresso
         SoccerNewsRepository.getInstance().getRemoteApi().getNews().enqueue(new Callback<List<News>>() {
             @Override
             public void onResponse(@NonNull Call<List<News>> call, @NonNull Response<List<News>> response) {
                 if (response.isSuccessful()) {
                     news.setValue(response.body());
-                    state.setValue(State.DONE);
+                    state.setValue(State.DONE);//quando tem sucesso estado está como feito
                 } else {
-                    state.setValue(State.ERROR);
+                    state.setValue(State.ERROR); //quando deu algum erro.
                 }
             }
 
